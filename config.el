@@ -25,14 +25,16 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. These are the defaults.
-(setq doom-theme 'doom-solarized-dark)
+(setq doom-theme 'doom-solarized-light)
 
 ;; If you intend to use org, it is recommended you change this!
 (setq org-directory "~/org/")
 
 ;; If you want to change the style of line numbers, change this to `relative' or
 ;; `nil' to disable it:
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type `relative)
+
+(add-hook 'clojure-mode-hook #'enable-paredit-mode)
 
 ;; Set larger icon for Ace (switching windows).
 (custom-set-faces
