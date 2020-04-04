@@ -17,6 +17,9 @@
 (package! cider)
 (package! clj-refactor)
 (package! paredit)
+(package! fill-column-indicator)
+(package! gradle-mode)
+(package! command-log-mode)
 
 ;; To install a package directly from a particular repo, you'll need to specify
 ;; a `:recipe'. You'll find documentation on what `:recipe' accepts here:

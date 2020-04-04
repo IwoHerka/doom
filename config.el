@@ -35,6 +35,8 @@
 (setq display-line-numbers-type `relative)
 
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
+(add-hook 'after-change-major-mode-hook 'fci-mode)
+
 
 ;; Set larger icon for Ace (switching windows).
 (custom-set-faces
