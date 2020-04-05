@@ -19,8 +19,11 @@
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
 ;; test
-(setq doom-font (font-spec :family "Fantasque Sans Mono" :size 14)
-      doom-variable-pitch-font (font-spec :family "sans"))
+(setq doom-font (font-spec :family "SF Mono" :size 14)
+      doom-variable-pitch-font (font-spec :family "SF Mono"))
+(setq doom-themes-treemacs-enable-variable-pitch nil)
+
+;; Fantasque Sans Mono
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -36,7 +39,6 @@
 
 (add-hook 'clojure-mode-hook #'enable-paredit-mode)
 (add-hook 'after-change-major-mode-hook 'fci-mode)
-
 
 ;; Set larger icon for Ace (switching windows).
 (custom-set-faces
