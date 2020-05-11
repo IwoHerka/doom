@@ -14,12 +14,13 @@
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 ;
-(package! cider)
-(package! clj-refactor)
-(package! paredit)
-(package! fill-column-indicator)
-(package! gradle-mode)
-(package! command-log-mode)
+ (package! cider)
+ (package! clj-refactor)
+ (package! paredit)
+ (package! fill-column-indicator)
+ (package! command-log-mode)
+ (package! proof-general)
+ ;; (package! smooth-scrolling)
 
 ;; To install a package directly from a particular repo, you'll need to specify
 ;; a `:recipe'. You'll find documentation on what `:recipe' accepts here:
